@@ -1,2 +1,9 @@
-<h1>Kittens#new</h1>
-<p>Find me in app/views/kittens/new.html.erb</p>
+<h1>New Kitten</h1>
+
+<%= render "form", kitten: @kitten %>
+
+<br>
+
+<div>
+  <%= link_to "Back to kittens", kittens_path %>
+</div>

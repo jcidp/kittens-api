@@ -1,2 +1,8 @@
-<h1>Kittens#show</h1>
-<p>Find me in app/views/kittens/show.html.erb</p>
+<%= render @kitten %>
+
+<div>
+  <%= link_to "Edit this kitten", edit_kitten_path(@kitten) %> |
+  <%= link_to "Back to kittens", kittens_path %>
+
+  <%= button_to "Destroy this kitten", @kitten, method: :delete %>
+</div>
